@@ -24,7 +24,8 @@ end
 
 % Calculate all position between given angles
 theta_vect = (th0:dth:(thf+dth))';
-[rr_vect] = Mat_parorb2rv(a,e,i,OM,om,theta_vect, mu);
+[rr_vect] = parorb2rv(a,e,i,OM,om,theta_vect, mu);
+rr_vect = rr_vect';
 
 % Plot orbit
 plot3(rr_vect(:,1), rr_vect(:,2), rr_vect(:,3));
