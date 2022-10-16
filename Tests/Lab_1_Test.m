@@ -11,7 +11,7 @@
 %                         works as intended
 
 clear;
-addpath("Functions\");
+addpath("..\Functions\");
 
 % Shared parameters
 mu = 398600;
